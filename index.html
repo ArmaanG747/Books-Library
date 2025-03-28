@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page displayed on the browser tab -->
+    <title>Library Explorer</title>
+    
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main header section of the page -->
+    <header>
+        <!-- Top bar containing the logo and search functionality -->
+        <div id="top-bar">
+            <!-- Logo and title container -->
+            <div id="logo-container">
+                <!-- Library logo image -->
+                <img id="library-logo" src="media/library-book-reading-abstract-icon-or-emblem-vector.jpg" alt="Library Logo">
+                <!-- Main title of the application -->
+                <h1>Library Explorer</h1>
+            </div>
+
+            <!-- Search bar container for searching books and authors -->
+            <div id="searchbar-container">
+                <!-- Search input field to enter book title or author name -->
+                <input id="searchbar" type="text" placeholder="Search for author or book name">
+                
+                <!-- Search button with an icon -->
+                <div id="search-button" type="button">
+                    <img id="search-icon" src="media/search-icon.png" alt="Search">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bar for sorting options and view mode toggle (list/grid) -->
+        <div id="sort-view-bar">
+            <!-- Sorting dropdown container -->
+            <div id="sort-bar">
+                <!-- Label for the sort dropdown -->
+                <label for="book-sort" id="book-sort-placeholder">Sort By:</label>
+                <!-- Dropdown menu to select the sorting option -->
+                <select id="book-sort">
+                    <!-- Default placeholder option -->
+                    <option value="" selected>-- Select Sorting Option --</option>
+                    <!-- Sort by title in alphabetical order (A-Z) -->
+                    <option value="title-asc">Title (A-Z)</option>
+                    <!-- Sort by title in reverse alphabetical order (Z-A) -->
+                    <option value="title-desc">Title (Z-A)</option>
+                    <!-- Sort by publication date from oldest to newest -->
+                    <option value="date-asc">Published Date (Ascending)</option>
+                    <!-- Sort by publication date from newest to oldest -->
+                    <option value="date-desc">Published Date (Descending)</option>
+                </select>
+            </div>
+
+            <!-- Toggle between list and grid view -->
+            <div id="list-grid-toggle">
+                <!-- Button to switch to list view -->
+                <button id="view-list-button" class="toggle-btn" type="button">
+                    <img class="view-icon" src="media/list-icon.png" alt="List View">
+                </button>
+                <!-- Button to switch to grid view -->
+                <button id="view-grid-button" class="toggle-btn" type="button">
+                    <img class="view-icon" src="media/gird-icon.jpg" alt="Grid View">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content area for displaying books and additional controls -->
+    <main>
+        <!-- Dynamic book display area (either grid or list view) -->
+        <div id="book-display"></div>
+        
+        <!-- Button to load more books when the user reaches the end -->
+        <button id="load-more-books">Load More</button>
+        
+        <!-- Button to quickly scroll back to the top of the page -->
+        <button id="back-to-top-button">
+            <img id="back-to-top-icon" src="media/top-button.png" alt="Back to Top">
+        </button>
+    </main>
+    
+    <!-- Footer section of the page -->
+    <footer>
+        <!-- Footer text with the application tagline -->
+        <p>Library Explorer - Bringing Knowledge Closer to You 🌟</p>
+        <!-- Copyright notice -->
+        <p>&copy; 2025 Mood Tracker. All rights reserved.</p>
+    </footer>
+    
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
